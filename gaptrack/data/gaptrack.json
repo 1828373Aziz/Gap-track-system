@@ -1,0 +1,829 @@
+{
+    "demo": false,
+    "source": "sql_import",
+    "next_shipment_id": 16,
+    "next_zone_id": 5,
+    "zones": [
+        {
+            "id": 1,
+            "name": "الربع الخالي",
+            "lat_min": 18,
+            "lat_max": 22,
+            "lng_min": 48,
+            "lng_max": 53,
+            "expected_gap_minutes": 45
+        },
+        {
+            "id": 3,
+            "name": "حائل",
+            "lat_min": 26.5,
+            "lat_max": 28.5,
+            "lng_min": 40.5,
+            "lng_max": 42.5,
+            "expected_gap_minutes": 30
+        },
+        {
+            "id": 4,
+            "name": "الرياض",
+            "lat_min": 24,
+            "lat_max": 25,
+            "lng_min": 43,
+            "lng_max": 44,
+            "expected_gap_minutes": 30
+        }
+    ],
+    "shipments": [
+        {
+            "id": 13,
+            "tracking_code": "GT-0013",
+            "origin": "الرياض",
+            "destination": "جدة",
+            "type": "land",
+            "status": "in_transit",
+            "created_at": "2026-08-31 11:12:48",
+            "points": [
+                {
+                    "id": 72,
+                    "lat": 24.7136,
+                    "lng": 46.6753,
+                    "time": "2026-08-31 10:12:48",
+                    "connection_status": "connected"
+                },
+                {
+                    "id": 73,
+                    "lat": 23.90865,
+                    "lng": 44.7946,
+                    "time": "2026-08-31 11:42:48",
+                    "connection_status": "connected"
+                },
+                {
+                    "id": 74,
+                    "lat": 23.0977,
+                    "lng": 42.9499,
+                    "time": "2026-08-31 13:12:48",
+                    "connection_status": "connected"
+                },
+                {
+                    "id": 75,
+                    "lat": 22.30875,
+                    "lng": 41.0932,
+                    "time": "2026-08-31 14:42:48",
+                    "connection_status": "connected"
+                },
+                {
+                    "id": 76,
+                    "lat": 21.4858,
+                    "lng": 39.1925,
+                    "time": "2026-08-31 16:12:48",
+                    "connection_status": "connected"
+                }
+            ]
+        },
+        {
+            "id": 12,
+            "tracking_code": "GT-0012",
+            "origin": "عنيزة",
+            "destination": "مكة المكرمة",
+            "type": "land",
+            "status": "in_transit",
+            "created_at": "2026-08-31 11:12:36",
+            "points": [
+                {
+                    "id": 65,
+                    "lat": 26.0843,
+                    "lng": 43.9936,
+                    "time": "2026-08-31 10:12:36",
+                    "connection_status": "connected"
+                },
+                {
+                    "id": 66,
+                    "lat": 25.299767,
+                    "lng": 43.302317,
+                    "time": "2026-08-31 11:42:36",
+                    "connection_status": "connected"
+                },
+                {
+                    "id": 67,
+                    "lat": 24.532233,
+                    "lng": 42.622033,
+                    "time": "2026-08-31 13:12:36",
+                    "connection_status": "connected"
+                },
+                {
+                    "id": 68,
+                    "lat": 23.7387,
+                    "lng": 41.95175,
+                    "time": "2026-08-31 14:42:36",
+                    "connection_status": "connected"
+                },
+                {
+                    "id": 69,
+                    "lat": 22.952167,
+                    "lng": 41.258467,
+                    "time": "2026-08-31 16:12:36",
+                    "connection_status": "connected"
+                },
+                {
+                    "id": 70,
+                    "lat": 22.150633,
+                    "lng": 40.570183,
+                    "time": "2026-08-31 17:42:36",
+                    "connection_status": "connected"
+                },
+                {
+                    "id": 71,
+                    "lat": 21.3891,
+                    "lng": 39.8579,
+                    "time": "2026-08-31 19:12:36",
+                    "connection_status": "connected"
+                }
+            ]
+        },
+        {
+            "id": 11,
+            "tracking_code": "GT-0011",
+            "origin": "عنيزة",
+            "destination": "مكة المكرمة",
+            "type": "sea",
+            "status": "in_transit",
+            "created_at": "2026-08-31 11:12:36",
+            "points": [
+                {
+                    "id": 57,
+                    "lat": 26.0843,
+                    "lng": 43.9936,
+                    "time": "2026-08-31 10:12:36",
+                    "connection_status": "connected"
+                },
+                {
+                    "id": 58,
+                    "lat": 25.405557,
+                    "lng": 43.395786,
+                    "time": "2026-08-31 11:42:36",
+                    "connection_status": "connected"
+                },
+                {
+                    "id": 59,
+                    "lat": 24.741814,
+                    "lng": 42.799971,
+                    "time": "2026-08-31 13:12:36",
+                    "connection_status": "connected"
+                },
+                {
+                    "id": 60,
+                    "lat": 24.076071,
+                    "lng": 42.200157,
+                    "time": "2026-08-31 14:42:36",
+                    "connection_status": "connected"
+                },
+                {
+                    "id": 61,
+                    "lat": 23.419329,
+                    "lng": 41.634343,
+                    "time": "2026-08-31 16:12:36",
+                    "connection_status": "connected"
+                },
+                {
+                    "id": 62,
+                    "lat": 22.741586,
+                    "lng": 41.067529,
+                    "time": "2026-08-31 17:42:36",
+                    "connection_status": "connected"
+                },
+                {
+                    "id": 63,
+                    "lat": 22.042843,
+                    "lng": 40.449714,
+                    "time": "2026-08-31 19:12:36",
+                    "connection_status": "connected"
+                },
+                {
+                    "id": 64,
+                    "lat": 21.3891,
+                    "lng": 39.8579,
+                    "time": "2026-08-31 20:42:36",
+                    "connection_status": "connected"
+                }
+            ]
+        },
+        {
+            "id": 10,
+            "tracking_code": "GT-0010",
+            "origin": "عنيزة",
+            "destination": "بريدة",
+            "type": "sea",
+            "status": "in_transit",
+            "created_at": "2026-08-31 11:12:36",
+            "points": [
+                {
+                    "id": 53,
+                    "lat": 26.0843,
+                    "lng": 43.9936,
+                    "time": "2026-08-31 10:12:36",
+                    "connection_status": "connected"
+                },
+                {
+                    "id": 54,
+                    "lat": 26.181867,
+                    "lng": 44.0034,
+                    "time": "2026-08-31 11:42:36",
+                    "connection_status": "connected"
+                },
+                {
+                    "id": 55,
+                    "lat": 26.270433,
+                    "lng": 43.9942,
+                    "time": "2026-08-31 13:12:36",
+                    "connection_status": "connected"
+                },
+                {
+                    "id": 56,
+                    "lat": 26.326,
+                    "lng": 43.975,
+                    "time": "2026-08-31 14:42:36",
+                    "connection_status": "connected"
+                }
+            ]
+        },
+        {
+            "id": 9,
+            "tracking_code": "GT-0009",
+            "origin": "مكة المكرمة",
+            "destination": "الطائف",
+            "type": "sea",
+            "status": "in_transit",
+            "created_at": "2026-08-31 11:12:36",
+            "points": [
+                {
+                    "id": 46,
+                    "lat": 21.3891,
+                    "lng": 39.8579,
+                    "time": "2026-08-31 10:12:36",
+                    "connection_status": "connected"
+                },
+                {
+                    "id": 47,
+                    "lat": 21.3693,
+                    "lng": 39.952883,
+                    "time": "2026-08-31 11:42:36",
+                    "connection_status": "connected"
+                },
+                {
+                    "id": 48,
+                    "lat": 21.3255,
+                    "lng": 40.035867,
+                    "time": "2026-08-31 13:12:36",
+                    "connection_status": "connected"
+                },
+                {
+                    "id": 49,
+                    "lat": 21.3017,
+                    "lng": 40.12985,
+                    "time": "2026-08-31 14:42:36",
+                    "connection_status": "connected"
+                },
+                {
+                    "id": 50,
+                    "lat": 21.3229,
+                    "lng": 40.245833,
+                    "time": "2026-08-31 16:12:36",
+                    "connection_status": "connected"
+                },
+                {
+                    "id": 51,
+                    "lat": 21.3101,
+                    "lng": 40.307817,
+                    "time": "2026-08-31 17:42:36",
+                    "connection_status": "connected"
+                },
+                {
+                    "id": 52,
+                    "lat": 21.2703,
+                    "lng": 40.4158,
+                    "time": "2026-08-31 19:12:36",
+                    "connection_status": "connected"
+                }
+            ]
+        },
+        {
+            "id": 8,
+            "tracking_code": "GT-0008",
+            "origin": "الدمام",
+            "destination": "المدينة المنورة",
+            "type": "sea",
+            "status": "in_transit",
+            "created_at": "2026-08-31 11:12:36",
+            "points": [
+                {
+                    "id": 39,
+                    "lat": 26.4207,
+                    "lng": 50.0888,
+                    "time": "2026-08-31 10:12:36",
+                    "connection_status": "connected"
+                },
+                {
+                    "id": 40,
+                    "lat": 26.1117,
+                    "lng": 48.361533,
+                    "time": "2026-08-31 11:42:36",
+                    "connection_status": "connected"
+                },
+                {
+                    "id": 41,
+                    "lat": 25.7737,
+                    "lng": 46.611267,
+                    "time": "2026-08-31 13:12:36",
+                    "connection_status": "connected"
+                },
+                {
+                    "id": 42,
+                    "lat": 25.4727,
+                    "lng": 44.82,
+                    "time": "2026-08-31 14:42:36",
+                    "connection_status": "connected"
+                },
+                {
+                    "id": 43,
+                    "lat": 25.1617,
+                    "lng": 43.046733,
+                    "time": "2026-08-31 16:12:36",
+                    "connection_status": "connected"
+                },
+                {
+                    "id": 44,
+                    "lat": 24.8667,
+                    "lng": 41.331467,
+                    "time": "2026-08-31 17:42:36",
+                    "connection_status": "connected"
+                },
+                {
+                    "id": 45,
+                    "lat": 24.5247,
+                    "lng": 39.5692,
+                    "time": "2026-08-31 19:12:36",
+                    "connection_status": "connected"
+                }
+            ]
+        },
+        {
+            "id": 7,
+            "tracking_code": "GT-0007",
+            "origin": "الرياض",
+            "destination": "حائل",
+            "type": "land",
+            "status": "in_transit",
+            "created_at": "2026-08-24 18:31:23",
+            "points": [
+                {
+                    "id": 34,
+                    "lat": 24.7136,
+                    "lng": 46.6753,
+                    "time": "2026-08-24 17:31:23",
+                    "connection_status": "connected"
+                },
+                {
+                    "id": 35,
+                    "lat": 25.38605,
+                    "lng": 45.425975,
+                    "time": "2026-08-24 19:01:23",
+                    "connection_status": "connected"
+                },
+                {
+                    "id": 36,
+                    "lat": 26.1175,
+                    "lng": 44.16065,
+                    "time": "2026-08-24 20:31:23",
+                    "connection_status": "connected"
+                },
+                {
+                    "id": 37,
+                    "lat": 26.79595,
+                    "lng": 42.912325,
+                    "time": "2026-08-24 22:01:23",
+                    "connection_status": "connected"
+                },
+                {
+                    "id": 38,
+                    "lat": 27.5114,
+                    "lng": 41.69,
+                    "time": "2026-08-24 23:31:23",
+                    "connection_status": "gap_zone"
+                }
+            ]
+        },
+        {
+            "id": 6,
+            "tracking_code": "GT-0006",
+            "origin": "بريدة",
+            "destination": "حائل",
+            "type": "land",
+            "status": "in_transit",
+            "created_at": "2026-08-23 21:44:42",
+            "points": [
+                {
+                    "id": 29,
+                    "lat": 26.326,
+                    "lng": 43.975,
+                    "time": "2026-08-23 20:44:42",
+                    "connection_status": "connected"
+                },
+                {
+                    "id": 30,
+                    "lat": 26.59635,
+                    "lng": 43.41875,
+                    "time": "2026-08-23 22:14:42",
+                    "connection_status": "connected"
+                },
+                {
+                    "id": 31,
+                    "lat": 26.9227,
+                    "lng": 42.8595,
+                    "time": "2026-08-23 23:44:42",
+                    "connection_status": "connected"
+                },
+                {
+                    "id": 32,
+                    "lat": 27.21805,
+                    "lng": 42.23425,
+                    "time": "2026-08-24 01:14:42",
+                    "connection_status": "gap_zone"
+                },
+                {
+                    "id": 33,
+                    "lat": 27.5114,
+                    "lng": 41.69,
+                    "time": "2026-08-24 02:44:42",
+                    "connection_status": "gap_zone"
+                }
+            ]
+        },
+        {
+            "id": 5,
+            "tracking_code": "GT-0005",
+            "origin": "الرياض",
+            "destination": "نجران",
+            "type": "land",
+            "status": "in_transit",
+            "created_at": "2026-08-23 21:43:25",
+            "points": [
+                {
+                    "id": 24,
+                    "lat": 24.7136,
+                    "lng": 46.6753,
+                    "time": "2026-08-23 20:43:25",
+                    "connection_status": "connected"
+                },
+                {
+                    "id": 25,
+                    "lat": 22.930525,
+                    "lng": 46.0624,
+                    "time": "2026-08-23 22:13:25",
+                    "connection_status": "connected"
+                },
+                {
+                    "id": 26,
+                    "lat": 21.11645,
+                    "lng": 45.3805,
+                    "time": "2026-08-23 23:43:25",
+                    "connection_status": "connected"
+                },
+                {
+                    "id": 27,
+                    "lat": 19.284375,
+                    "lng": 44.7396,
+                    "time": "2026-08-24 01:13:25",
+                    "connection_status": "connected"
+                },
+                {
+                    "id": 28,
+                    "lat": 17.4933,
+                    "lng": 44.1277,
+                    "time": "2026-08-24 02:43:25",
+                    "connection_status": "connected"
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "tracking_code": "GT-0004",
+            "origin": "بريدة",
+            "destination": "حائل",
+            "type": "land",
+            "status": "in_transit",
+            "created_at": "2026-08-23 21:13:34",
+            "points": [
+                {
+                    "id": 19,
+                    "lat": 26.326,
+                    "lng": 43.975,
+                    "time": "2026-08-23 20:13:34",
+                    "connection_status": "connected"
+                },
+                {
+                    "id": 20,
+                    "lat": 26.59335,
+                    "lng": 43.41275,
+                    "time": "2026-08-23 21:43:34",
+                    "connection_status": "connected"
+                },
+                {
+                    "id": 21,
+                    "lat": 26.9437,
+                    "lng": 42.8175,
+                    "time": "2026-08-23 23:13:34",
+                    "connection_status": "connected"
+                },
+                {
+                    "id": 22,
+                    "lat": 27.22205,
+                    "lng": 42.25825,
+                    "time": "2026-08-24 00:43:34",
+                    "connection_status": "gap_zone"
+                },
+                {
+                    "id": 23,
+                    "lat": 27.5114,
+                    "lng": 41.69,
+                    "time": "2026-08-24 02:13:34",
+                    "connection_status": "gap_zone"
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "tracking_code": "GT-0003",
+            "origin": "بريدة",
+            "destination": "حائل",
+            "type": "land",
+            "status": "in_transit",
+            "created_at": "2026-08-23 21:12:53",
+            "points": [
+                {
+                    "id": 14,
+                    "lat": 26.326,
+                    "lng": 43.975,
+                    "time": "2026-08-23 20:12:53",
+                    "connection_status": "connected"
+                },
+                {
+                    "id": 15,
+                    "lat": 26.60635,
+                    "lng": 43.41875,
+                    "time": "2026-08-23 21:42:53",
+                    "connection_status": "connected"
+                },
+                {
+                    "id": 16,
+                    "lat": 26.9167,
+                    "lng": 42.8525,
+                    "time": "2026-08-23 23:12:53",
+                    "connection_status": "connected"
+                },
+                {
+                    "id": 17,
+                    "lat": 27.20405,
+                    "lng": 42.28525,
+                    "time": "2026-08-24 00:42:53",
+                    "connection_status": "gap_zone"
+                },
+                {
+                    "id": 18,
+                    "lat": 27.5114,
+                    "lng": 41.69,
+                    "time": "2026-08-24 02:12:53",
+                    "connection_status": "gap_zone"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "tracking_code": "GT-0002",
+            "origin": "الرياض",
+            "destination": "جدة",
+            "type": "land",
+            "status": "in_transit",
+            "created_at": "2026-08-23 21:12:37",
+            "points": [
+                {
+                    "id": 9,
+                    "lat": 24.7136,
+                    "lng": 46.6753,
+                    "time": "2026-08-23 20:12:37",
+                    "connection_status": "connected"
+                },
+                {
+                    "id": 10,
+                    "lat": 23.87765,
+                    "lng": 44.7946,
+                    "time": "2026-08-23 21:42:37",
+                    "connection_status": "connected"
+                },
+                {
+                    "id": 11,
+                    "lat": 23.0967,
+                    "lng": 42.9079,
+                    "time": "2026-08-23 23:12:37",
+                    "connection_status": "connected"
+                },
+                {
+                    "id": 12,
+                    "lat": 22.28475,
+                    "lng": 41.0562,
+                    "time": "2026-08-24 00:42:37",
+                    "connection_status": "connected"
+                },
+                {
+                    "id": 13,
+                    "lat": 21.4858,
+                    "lng": 39.1925,
+                    "time": "2026-08-24 02:12:37",
+                    "connection_status": "connected"
+                }
+            ]
+        },
+        {
+            "id": 1,
+            "tracking_code": "GT-0001",
+            "origin": "الرياض",
+            "destination": "جدة",
+            "type": "land",
+            "status": "in_transit",
+            "created_at": "2026-07-26 21:21:19",
+            "points": [
+                {
+                    "id": 4,
+                    "lat": 24.7136,
+                    "lng": 46.6753,
+                    "time": "2026-07-26 08:00:00",
+                    "connection_status": "connected"
+                },
+                {
+                    "id": 5,
+                    "lat": 23.8859,
+                    "lng": 45.0792,
+                    "time": "2026-07-26 09:30:00",
+                    "connection_status": "connected"
+                },
+                {
+                    "id": 6,
+                    "lat": 22,
+                    "lng": 43.5,
+                    "time": "2026-07-26 11:00:00",
+                    "connection_status": "connected"
+                },
+                {
+                    "id": 7,
+                    "lat": 21.4858,
+                    "lng": 39.1925,
+                    "time": "2026-07-26 13:00:00",
+                    "connection_status": "abnormal_gap"
+                },
+                {
+                    "id": 8,
+                    "lat": 20.5,
+                    "lng": 50,
+                    "time": "2026-07-26 15:00:00",
+                    "connection_status": "gap_zone"
+                }
+            ]
+        },
+        {
+            "id": 14,
+            "tracking_code": "GT-945648F2",
+            "origin": "الرياض",
+            "destination": "مكة المكرمة",
+            "type": "land",
+            "status": "in_transit",
+            "created_at": "2026-11-08T19:54:45+03:00",
+            "points": [
+                {
+                    "id": 77,
+                    "lat": 24.7136,
+                    "lng": 46.6753,
+                    "time": "2026-11-08T15:54:45+03:00"
+                },
+                {
+                    "id": 78,
+                    "lat": 23.869648676885507,
+                    "lng": 44.9837763231145,
+                    "time": "2026-11-08T16:54:45+03:00"
+                },
+                {
+                    "id": 79,
+                    "lat": 23.061631559370237,
+                    "lng": 43.25631844062976,
+                    "time": "2026-11-08T17:54:45+03:00"
+                },
+                {
+                    "id": 80,
+                    "lat": 22.224809642147928,
+                    "lng": 41.55766535785207,
+                    "time": "2026-11-08T18:54:45+03:00"
+                },
+                {
+                    "id": 81,
+                    "lat": 21.3891,
+                    "lng": 39.8579,
+                    "time": "2026-11-08T19:54:45+03:00"
+                }
+            ]
+        },
+        {
+            "id": 15,
+            "tracking_code": "GT-85E21C6A",
+            "origin": "الرياض",
+            "destination": "جدة",
+            "type": "land",
+            "status": "in_transit",
+            "created_at": "2026-11-08T23:11:43+03:00",
+            "points": [
+                {
+                    "id": 82,
+                    "lat": 24.7136,
+                    "lng": 46.6753,
+                    "time": "2026-11-08T17:11:43+03:00"
+                },
+                {
+                    "id": 83,
+                    "lat": 24.16280701021884,
+                    "lng": 45.440992989781165,
+                    "time": "2026-11-08T18:11:43+03:00"
+                },
+                {
+                    "id": 84,
+                    "lat": 23.647948226036906,
+                    "lng": 44.1707517739631,
+                    "time": "2026-11-08T19:11:43+03:00"
+                },
+                {
+                    "id": 85,
+                    "lat": 23.104284642147928,
+                    "lng": 42.929315357852076,
+                    "time": "2026-11-08T20:11:43+03:00"
+                },
+                {
+                    "id": 86,
+                    "lat": 22.54777673240875,
+                    "lng": 41.70072326759125,
+                    "time": "2026-11-08T21:11:43+03:00"
+                },
+                {
+                    "id": 87,
+                    "lat": 22.030369612709986,
+                    "lng": 40.43303038729002,
+                    "time": "2026-11-08T22:11:43+03:00"
+                },
+                {
+                    "id": 88,
+                    "lat": 21.4858,
+                    "lng": 39.1925,
+                    "time": "2026-11-08T23:11:43+03:00"
+                }
+            ]
+        }
+    ],
+    "alerts": [
+        {
+            "id": 6,
+            "shipment_id": 7,
+            "alert_type": "gap_zone_entry",
+            "message": "الشحنة رقم 7 دخلت منطقة \"حائل\" — الوصول المتوقع لعودة الإشارة خلال 30 دقيقة تقريبًا.",
+            "created_at": "2026-08-31 11:12:36"
+        },
+        {
+            "id": 5,
+            "shipment_id": 6,
+            "alert_type": "gap_zone_entry",
+            "message": "الشحنة رقم 6 دخلت منطقة \"حائل\" — الوصول المتوقع لعودة الإشارة خلال 30 دقيقة تقريبًا.",
+            "created_at": "2026-08-31 11:12:36"
+        },
+        {
+            "id": 4,
+            "shipment_id": 4,
+            "alert_type": "gap_zone_entry",
+            "message": "الشحنة رقم 4 دخلت منطقة \"حائل\" — الوصول المتوقع لعودة الإشارة خلال 30 دقيقة تقريبًا.",
+            "created_at": "2026-08-31 11:12:36"
+        },
+        {
+            "id": 3,
+            "shipment_id": 3,
+            "alert_type": "gap_zone_entry",
+            "message": "الشحنة رقم 3 دخلت منطقة \"حائل\" — الوصول المتوقع لعودة الإشارة خلال 30 دقيقة تقريبًا.",
+            "created_at": "2026-08-31 11:12:36"
+        },
+        {
+            "id": 2,
+            "shipment_id": 1,
+            "alert_type": "gap_zone_entry",
+            "message": "الشحنة رقم 1 دخلت منطقة \"الربع الخالي\" — الوصول المتوقع لعودة الإشارة خلال 45 دقيقة تقريبًا.",
+            "created_at": "2026-08-23 21:07:05"
+        },
+        {
+            "id": 1,
+            "shipment_id": 1,
+            "alert_type": "abnormal_gap",
+            "message": "تنبيه: الشحنة رقم 1 — انقطاع غير متوقع لمدة 120 دقيقة خارج أي منطقة معروفة.",
+            "created_at": "2026-08-23 21:07:05"
+        }
+    ]
+}
